@@ -26,5 +26,4 @@ shuffle(myCase);
 localStorage.setItem("TableCase", JSON.stringify(myCase));}
 else{
     myCase=JSON.parse(localStorage.getItem('TableCase'))
-    vvfsvgfgvvfvfvfv
 }
