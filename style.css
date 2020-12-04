@@ -1,13 +1,37 @@
-/* Styles for the Demo Wrapper */
+@font-face {
+    font-family: 'christmas';
+    src: url('Font/reindeer_christmas_-_personal_use-webfont.woff2') format('woff2'),
+         url('Font/reindeer_christmas_-_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'santassleighfullbold';
+  src: url('Font/santassleighfull_bold-webfont.woff2') format('woff2'),
+       url('Font/santassleighfull_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
 html {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
 }
 
 body{
-  background: url(images/gold.jpg);
+  background: url(images/unnamed.jpg);
   background-repeat:no-repeat;
-  overflow: hidden;
+  overflow-y: hidden;
+}
+
+h1{
+  color: silver;
+  font-family: 'santassleighfullbold';
+  font-size: 50px;
+  margin: 0;
 }
 
 *,
@@ -56,8 +80,8 @@ header a:hover {
   background-color: #1f4272;
 }
 .demo-content {
-  max-width: 600px;
-  margin-top: 10px;
+  max-width: 400px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 90px;
@@ -83,16 +107,36 @@ ul#adventDoors {
 	flex-direction: column;
 	justify-content: center;
 	text-decoration: none;
-	border: 1px #fff solid;
+  border: 1px #fff;
+  border-style: dashed;
+  border-left: 1px solid;
 }
 #adventDoors li a:not(.disabled):hover {
 	color: #fff;
 	background-color: transparent;
-	background-color: rgba(255,255,255,0.15);
+	background-color: rgba(253, 255, 253, 0.281);
 }
-#adventDoors li a.disabled {
-	border-color: #b6fe98;
-	background-color: rgba(196,254,171,0.15);
-	color: #b6fe98;
+/* #adventDoors li a.disabled {
+	border-color: #ffffff;
+	background-color: rgba(253, 255, 253, 0.281);
+	color: #ffffff;
 	cursor: default;
+} */
+
+#compte_a_rebours{
+font-size: 70px;
+color: silver  ;
+font-family: 'christmas';
+text-align: center;
+}
+
+/* Rotation */
+.rotate{
+  -webkit-transition: all 0.5s ease !important;
+  transition: all 0.5s ease !important;
+}
+ 
+.rotate:hover{
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
