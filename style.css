@@ -116,12 +116,12 @@ ul#adventDoors {
 	background-color: transparent;
 	background-color: rgba(253, 255, 253, 0.281);
 }
-/* #adventDoors li a.disabled {
-	border-color: #ffffff;
-	background-color: rgba(253, 255, 253, 0.281);
+#adventDoors li a.disabled {
+	border-color: gold;
+	/* background-color: rgba(253, 255, 253, 0.281); */
 	color: #ffffff;
 	cursor: default;
-} */
+}
 
 #compte_a_rebours{
 font-size: 70px;
